@@ -10,6 +10,6 @@ jobs:
       - uses: actions/checkout@v3
         with:
           fetch-depth: 0
-          ref: "${GITHUB_REF#refs/*/}"
+      - run: git log | head
       - name: build image
         run: docker build -t test-git .
