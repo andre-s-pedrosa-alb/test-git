@@ -8,3 +8,8 @@ def mul(a, b):
 def div(a, b):
     assert b != 0
     return a / b
+
+def power(a, b):
+    if b == 1:
+        return a
+    return a**b
