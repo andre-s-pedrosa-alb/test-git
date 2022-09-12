@@ -10,6 +10,8 @@ def div(a, b):
     return a / b
 
 def power(a, b):
+    if b < 0:
+        return 1/power(a, -b)
     if b == 0:
         return 1
     if b == 1:
