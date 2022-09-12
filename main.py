@@ -7,4 +7,4 @@ if __name__ == "__main__":
     main(sys.argv)
 
 def cenas(args):
-    pass
+    return 0
