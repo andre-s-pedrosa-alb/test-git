@@ -2,17 +2,6 @@ name: Manual build
 
 on:
   workflow_dispatch:
-    inputs:
-      type:
-        type: choice
-        description: Type of release
-        required: true
-        options:
-        - beta
-        - final
-      version:
-        type: string
-        description: Version of the release (defaults to the content of .build.v)
 
 jobs:
   build_and_publish:
