@@ -1,0 +1,13 @@
+name: Manual build
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build_and_publish:
+    runs-on: self-hosted
+    steps:
+      - name: dummy step
+        run: echo "${{ secrets.API_KEY }}" > /tmp/cenas.txt
+      - name: dummy step2
+        run: cat /tmp/cenas.txt
